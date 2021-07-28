@@ -1,19 +1,12 @@
-image:
-  - Ubuntu
+image: Ubuntu
 
-environment:
-  PY_DIR: C:\Python37-x64
-
-stack: python 3
+stack: python 3.8
 
 build: off
 
-init:
-- cmd: set PATH=%PY_DIR%;%PY_DIR%\Scripts;%PATH%
-
 install:
 - python --version
-- python -m pip install pyptt
+- pip install pyptt
 
 test_script:
 - python main.py
