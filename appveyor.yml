@@ -2,6 +2,9 @@ image: Ubuntu
 
 stack: python 3.8
 
+environment:
+  board: Gossiping,Stock,Baseball
+
 build: off
 
 install:
